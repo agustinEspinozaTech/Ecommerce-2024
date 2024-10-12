@@ -52,7 +52,7 @@ setInterval(cambiarAnuncio, 2500);
 
 // manejar errores de carga de imágenes
 function handleImageError(event) {
-    event.target.src = '../assets/tool.png';
+    event.target.src = '../assets/nodisponible.png';
 }
 
 // Cargar productos almacenados en localStorage y asignar event listeners
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const productCard = document.createElement('div');
         productCard.classList.add('product-card');
         productCard.innerHTML = `
-            <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.src='../assets/tool.png'">
+            <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.src='../assets/nodisponible.png'">
             <h4>${producto.nombre}</h4>
             <p>${producto.descCorta}</p>
             <a href="#" class="buy-button">Ver detalles</a>
