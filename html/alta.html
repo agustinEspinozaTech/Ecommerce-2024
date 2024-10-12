@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta de Producto</title>
+    <link rel="stylesheet" href="../style/alta.css">
+</head>
+
+<body>
+    <header>
+        <div id="top-bar">
+            <p>¡Envíos gratis en compras mayores a Lorem.</p>
+        </div>
+        <div id="header-container">
+            <div id="logo">
+                <h1>Lorem, ipsum.</h1>
+            </div>
+
+            <div id="user-icons">
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/html/index.html">Inicio</a></li>
+                <li><a href="#">Alta</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <div>
+                <h2>Alta de Producto</h2>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="precio">Precio:</label>
+                    <input type="text" id="precio" name="precio">
+                </div>
+
+                <div class="form-group">
+                    <label for="stock">Stock:</label>
+                    <input type="number" id="stock" name="stock">
+                </div>
+
+                <div class="form-group">
+                    <label for="marca">Marca:</label>
+                    <input type="text" id="marca" name="marca">
+                </div>
+
+                <div class="form-group">
+                    <label for="categoria">Categoría:</label>
+                    <input type="text" id="categoria" name="categoria">
+                </div>
+
+                <div class="form-group">
+                    <label for="descCorta">Descripción corta:</label>
+                    <textarea id="descCorta" name="descCorta"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="descLarga">Descripción larga:</label>
+                    <textarea id="descLarga" name="descLarga"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="envio">Envío sin cargo:</label>
+                    <input type="checkbox" id="envio" name="envio">
+                </div>
+
+                <div class="form-group">
+                    <label for="edadDesde">Edad desde:</label>
+                    <input type="number" id="edadDesde" name="edadDesde">
+                </div>
+
+                <div class="form-group">
+                    <label for="edadHasta">Edad hasta:</label>
+                    <input type="number" id="edadHasta" name="edadHasta">
+                </div>
+
+                <div class="form-group">
+                    <label for="foto">Imagen del producto:</label>
+                    <input placeholder="Ingresá la url de la imagen" type="url" id="foto" name="foto" accept="image/*">
+                </div>
+
+                <button type="submit">Agregar Producto</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Lorem ipsum dolor sit amet.</p>
+    </footer>
+
+    <script src="../js/alta.js"></script>
+</body>
+
+</html>
