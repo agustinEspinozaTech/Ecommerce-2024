@@ -48,8 +48,8 @@ document.querySelector('form').addEventListener('submit', function (e) {
     e.preventDefault();  
 
     // Validar campos obligatorios
-    const nombreValido = validarInput(nombreInput, validacionInputNombre, 'Campo nombre es obligatorio*.');
-    const emailValido = validarInput(emailInput, validacionInputEmail, 'Campo e-mail es obligatorio*.');
+    const nombreValido = validarInput(nombreInput, validacionInputNombre, 'Nombre es obligatorio*.');
+    const emailValido = validarInput(emailInput, validacionInputEmail, 'E-mail es obligatorio*.');
 
     // Verificar que todos los campos obligatorios esten correctamente ingresados
     if (nombreValido && emailValido) {

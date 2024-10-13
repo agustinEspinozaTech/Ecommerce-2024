@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const validacionInputStock = /^[1-9]\d*$/;
     const validacionInputEdad = /^(1[89]|[2-9]\d|1[0-4]\d|150)$/;
     const validacionInputMarca = /^(?!\s*$).{1,100}$/;
-    const validacionInputDescCorta = /^[^\s][\s\S]{15,25}$/;
-    const validacionInputDescLarga = /^[^\s][\s\S]{10,30}$/;
+    const validacionInputDescCorta = /^[^\s][\s\S]{10,25}$/;
+    const validacionInputDescLarga = /^[^\s][\s\S]{15,30}$/;
     const validacionInputURL = /^(ftp|http|https):\/\/[^ "]+$/;
 
     // Mensaje de error
@@ -58,10 +58,10 @@ document.addEventListener('DOMContentLoaded', function () {
         validarInput(this, validacionInputMarca, 'Formato inválido.');
     });
     descCortaInput.addEventListener('input', function () {
-        validarInput(this, validacionInputDescCorta, 'Debe contener entre 15 y 25 caracteres.');
+        validarInput(this, validacionInputDescCorta, 'Debe contener entre 10 y 25 caracteres.');
     });
     descLargaInput.addEventListener('input', function () {
-        validarInput(this, validacionInputDescLarga, 'No debe contener más de 20 caracteres.');
+        validarInput(this, validacionInputDescLarga, 'Debe contener entre 15 y 30 caracteres.');
     });
     edadDesdeInput.addEventListener('input', function () {
         validarInput(this, validacionInputEdad, 'Debe ser mayor de 18 años.');
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Validar categoria
         const categoriaValida = categoriaSelect.value !== "" ? true : (mostrarMensajeError(categoriaSelect, 'Debe seleccionar una categoría*'), false);
 
-        const descCortaValida = validarInput(descCortaInput, validacionInputDescCorta, 'Categoría es obligatorio*.');
+        const descCortaValida = validarInput(descCortaInput, validacionInputDescCorta, 'Descripción es obligatorio*.');
         const edadDesdeValido = validarInput(edadDesdeInput, validacionInputEdad, 'Edad es obligatorio*.');
         const edadHastaValido = validarInput(edadHastaInput, validacionInputEdad, 'Edad es obligatorio*.');
         const urlValida = validarInput(fotoInput, validacionInputURL, 'Debe ingresar una URL válida.');
@@ -112,8 +112,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 edadDesde: edadDesdeInput.value,
                 edadHasta: edadHastaInput.value,
                 imagen: fotoInput.value
+               
             };
-
             // Guardar el producto en localStorage
             let productos = JSON.parse(localStorage.getItem('productos')) || [];
             productos.push(nuevoProducto);
