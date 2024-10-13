@@ -31,18 +31,18 @@ document.addEventListener('DOMContentLoaded', function() {
         modal.style.display = "none";
     }
 
-    // Cerrar el modal al hacer clic en la 'x'
+    // Cerrar el modal al hacer click en la 'x'
     closeModal.addEventListener('click', closeModalFunc);
 
-    // Cerrar el modal al hacer clic fuera de él
+    // Cerrar el modal al hacer click fuera de él
     window.addEventListener('click', (event) => {
         if (event.target === modal) {
             closeModalFunc();
         }
     });
 
-    // Mostrar el modal al hacer clic en "Comprar"
-    const comprarButtons = document.querySelectorAll('.cta-button,  form');
+    // Mostrar el modal al hacer click en "Comprar"
+    const comprarButtons = document.querySelectorAll('.cta-button,  form, header > div > div > a');
     comprarButtons.forEach(button => {
         button.addEventListener('click', (event) => {
             event.preventDefault(); 
