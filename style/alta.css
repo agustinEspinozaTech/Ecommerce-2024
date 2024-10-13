@@ -13,17 +13,7 @@
     --box-shadow-color: rgba(0, 0, 0, 0.1);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: var(--main-bg-color);
-    color: var(--main-text-color);
-}
 
 header>div:nth-child(2)>div:first-child h1 {
     display: flex;
@@ -39,66 +29,6 @@ header>div:nth-child(2)>div:first-child h1 img {
 
 main section > div:first-child {
     text-align: center;
-}
-
-#top-bar {
-    background-color: var(--top-bar-bg-color);
-    color: var( --main-text-color);
-    text-align: center;
-    padding: 0.625rem;
-    font-size: 0.875rem;
-}
-
-#header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.25rem;
-    background-color: var(--header-bg-color);
-}
-
-#logo h1 {
-    font-size: 1.5rem;
-    color: var(--main-text-color);
-}
-
-
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    background-color: var(--nav-bg-color);
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 0.9375rem;
-}
-
-nav ul li a {
-    color: var(--white);
-    padding: 0.9375rem 1.25rem;
-    display: block;
-    font-size: 1rem;
-}
-
-main {
-    padding: 2rem;
-    background-color: var(--main-content-bg-color);
-}
-
-.form-section {
-    max-width: 50rem;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: var(--white);
-    border-radius: 0.5rem;
-    box-shadow: 0 0 0.625rem var(--box-shadow-color);
 }
 
 .form-group {
@@ -138,62 +68,8 @@ main {
     box-shadow: 0 0 0.3125rem rgba(0, 121, 107, 0.5);
 }
 
-h2 {
-    margin-bottom: 1.5rem;
-    color: black;
-}
 
 .form-group input[type="checkbox"] {
     width: auto;
 }
 
-button[type="submit"] {
-    padding: 0.75rem 1.5rem;
-    background-color: var(--primary-color);
-    color: var(--white);
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background-color: var(--primary-hover-color);
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: var(--footer-bg-color);
-    color: var(--white);
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-    #header-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #user-icons {
-        margin-top: 1rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 0.5rem 0;
-    }
-
-    nav ul li a {
-        padding: 0.75rem 1rem;
-    }
-
-    .form-section {
-        padding: 1rem;
-    }
-}
