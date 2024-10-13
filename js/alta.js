@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
         validarInput(this, validacionInputEdad, 'Debe ser mayor de 18 años.');
     });
     edadHastaInput.addEventListener('input', function () {
-        validarInput(this, validacionInputEdad, 'La edad debe estar entre 18 y 150 años.');
+        validarInput(this, validacionInputEdad, `La edad debe estar entre ${edadDesde.value} y 150 años.`);
     });
     fotoInput.addEventListener('input', function () {
         validarInput(this, validacionInputURL, 'Debe ingresar una URL válida.');

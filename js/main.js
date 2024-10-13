@@ -1,13 +1,13 @@
 // Datos de productos 
 const productos = {
-    1: { imagen: "../assets/productos/zapatosdeportivos.png", nombre: "Zapatos Deportivos Running", descCorta: "Zapatos ligeros y cómodos, ideales para correr.", precio: "$50", marca: "SportMax" },
-    2: { imagen: "../assets/productos/Silla.jpg", nombre: "Silla de Oficina Ergonómica", descCorta: "Silla ajustable con soporte lumbar.", precio: "$120", marca: "ComfortSeat" },
-    3: { imagen: "../assets/productos/camisadeportiva.png", nombre: "Camiseta Deportiva", descCorta: "Camiseta de entrenamiento.", precio: "$25", marca: "Adidas" },
-    4: { imagen: "../assets/productos/microondas.webp", nombre: "Microondas", descCorta: "Microondas con múltiples funciones y temporizador.", precio: "$80", marca: "ElectroHome" },
-    5: { imagen: "../assets/productos/bloquejuego.webp", nombre: "Set de Bloques de Construcción", descCorta: "Juguete educativo con bloques para niños.", precio: "$25", marca: "Build&Play" },
-    6: { imagen: "../assets/productos/ps5.webp", nombre: "PlayStation 5", descCorta: "Consola de videojuegos", precio: "$800", marca: "Sony" },
-    7: { imagen: "../assets/productos/aspiradorarobot.jpg", nombre: "Aspiradora robot", descCorta: "Aspiradora eléctrica para el hogar.", precio: "$200", marca: "Samsung" },
-    8: { imagen: "../assets/productos/ollas.jpeg", nombre: "Set de ollas", descCorta: "Seis ollas para cocina profesional.", precio: "$70", marca: "Hudson" },
+    1: { imagen: "../assets/productos/zapatosdeportivos.png", nombre: "Zapatos Deportivos Running", descCorta: "Zapatos ligeros y cómodos, ideales para correr.", precio: "$50.000,00", marca: "SportMax" },
+    2: { imagen: "../assets/productos/Silla.jpg", nombre: "Silla de Oficina Ergonómica", descCorta: "Silla ajustable con soporte lumbar.", precio: "$120.000,00", marca: "ComfortSeat" },
+    3: { imagen: "../assets/productos/camisadeportiva.png", nombre: "Camiseta Deportiva", descCorta: "Camiseta de entrenamiento.", precio: "$25.000,00", marca: "Adidas" },
+    4: { imagen: "../assets/productos/microondas.webp", nombre: "Microondas", descCorta: "Microondas con múltiples funciones y temporizador.", precio: "$80.000,00", marca: "ElectroHome" },
+    5: { imagen: "../assets/productos/bloquejuego.webp", nombre: "Set de Bloques de Construcción", descCorta: "Juguete educativo con bloques para niños.", precio: "$25.000,00", marca: "Build&Play" },
+    6: { imagen: "../assets/productos/ps5.webp", nombre: "PlayStation 5", descCorta: "Consola de videojuegos", precio: "$800.000,00", marca: "Sony" },
+    7: { imagen: "../assets/productos/aspiradorarobot.jpg", nombre: "Aspiradora robot", descCorta: "Aspiradora eléctrica para el hogar.", precio: "$200.000,00", marca: "Samsung" },
+    8: { imagen: "../assets/productos/ollas.jpeg", nombre: "Set de ollas", descCorta: "Seis ollas para cocina profesional.", precio: "$70.000,00", marca: "Hudson" },
 
 };
 
@@ -23,7 +23,7 @@ const closeModal = document.getElementsByClassName('close')[0];
 /* Parte dinámica del main */
 let anuncios = [
     { texto: "Descuento especial en calzados.", imagen: "../assets/productos/zapatosdeportivos.png" },
-    { texto: "Envío gratis en compras mayores a $50.", imagen: "../assets/productos/silla.jpg" },
+    { texto: "Envío gratis en compras mayores a $50.000,00.", imagen: "../assets/productos/silla.jpg" },
     { texto: "Hasta 12 cuotas sin interés en toda la colección de ropa.", imagen: "../assets/productos/camisadeportiva.png" },
     { texto: "Rebajas imperdibles: 30% de descuento en electrodomésticos seleccionados.", imagen: "../assets/productos/microondas.webp" },
     { texto: "Compra hoy y paga en 6 cuotas sin interés en todos nuestros juguetes.", imagen: "../assets/productos/bloquejuego.webp" },
@@ -152,4 +152,4 @@ window.addEventListener('click', (event) => {
 });
 
 //puedo eliminar los productos creados
-/*  localStorage.removeItem('productos');  */   
+  /*  localStorage.removeItem('productos');   */

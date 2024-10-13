@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 :root {
     /* Colores */
     --color-fondo: #F4F4F4;
@@ -11,7 +13,7 @@
     --color-boton-hover: #045B9E;
 
     /* Fuentes */
-    --fuente-principal: Arial, sans-serif;
+    --fuente-principal: 'DM Sans';
 
     /* Tamaños */
     --padding-small: 10px;

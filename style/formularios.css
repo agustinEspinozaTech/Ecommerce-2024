@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 :root {
     --main-bg-color: #f4f4f4;
     --main-content-bg-color: #f3f0f0;
@@ -10,6 +12,9 @@
     --top-bar-bg-color: #F4F4F4;
     --footer-bg-color: #333;
     --box-shadow-color: rgba(0, 0, 0, 0.1);
+    --fuente-principal:'DM Sans';
+    --font-size-p: 1.2em;
+
 }
 
 * {
@@ -19,11 +24,14 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--fuente-principal);
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
 }
 
+p{
+    font-size: var(--font-size-p);
+}
 
 header>div:nth-child(2)>div:first-child h1 {
     display: flex;
