@@ -22,14 +22,14 @@ const closeModal = document.getElementsByClassName('close')[0];
 
 /* Parte dinámica del main */
 let anuncios = [
-    { texto: "Descuento especial en zapatos", imagen: "../assets/productos/zapatosdeportivos.png" },
-    { texto: "Envío gratis en compras mayores a $50", imagen: "../assets/productos/silla.jpg" },
-    { texto: "Cualquier cosa acá", imagen: "../assets/productos/camisadeportiva.png" },
-    { texto: "Cualquier cosa acá2", imagen: "../assets/productos/microondas.webp" },
-    { texto: "Cualquier cosa acá3", imagen: "../assets/productos/bloquejuego.webp" },
-    { texto: "Cualquier cosa acá4", imagen: "../assets/productos/ps5.webp" },
-    { texto: "Cualquier cosa acá5", imagen: "../assets/productos/aspiradorarobot.jpg" },
-    { texto: "Cualquier cosa acá6", imagen: "../assets/productos/ollas.jpeg" },
+    { texto: "Descuento especial en calzados.", imagen: "../assets/productos/zapatosdeportivos.png" },
+    { texto: "Envío gratis en compras mayores a $50.", imagen: "../assets/productos/silla.jpg" },
+    { texto: "Hasta 12 cuotas sin interés en toda la colección de ropa.", imagen: "../assets/productos/camisadeportiva.png" },
+    { texto: "Rebajas imperdibles: 30% de descuento en electrodomésticos seleccionados.", imagen: "../assets/productos/microondas.webp" },
+    { texto: "Compra hoy y paga en 6 cuotas sin interés en todos nuestros juguetes.", imagen: "../assets/productos/bloquejuego.webp" },
+    { texto: "Hasta 6 cuotas sin interés en los últimos lanzamientos de videojuegos.", imagen: "../assets/productos/ps5.webp" },
+    { texto: "Compra tu aspiradora en 12 cuotas sin interés, ¡limpieza sin esfuerzo!", imagen: "../assets/productos/aspiradorarobot.jpg" },
+    { texto: "Hasta 40% de descuento en ollas de alta calidad, ¡solo por tiempo limitado!", imagen: "../assets/productos/ollas.jpeg" },
 ];
 
 let indiceActual = 0;
@@ -59,8 +59,8 @@ const cambiarAnuncio = () => {
 };
 
 
-// Cambia de anuncio cada 2.5 segundos
-setInterval(cambiarAnuncio, 2500);
+// Cambia de anuncio cada 3 segundos
+setInterval(cambiarAnuncio, 3000);
 
 // manejar errores de carga de imágenes
 function handleImageError(event) {
@@ -152,4 +152,4 @@ window.addEventListener('click', (event) => {
 });
 
 //puedo eliminar los productos creados
-/*  localStorage.removeItem('productos');   */
+/* localStorage.removeItem('productos');   */  

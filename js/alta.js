@@ -77,17 +77,17 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('form').addEventListener('submit', function (e) {
         e.preventDefault();  
         // Validar todos los campos obligatorios
-        const nombreValido = validarInput(nombreInput, validacionInputLetras, 'Campo nombre es obligatorio*.');
-        const precioValido = validarInput(precioInput, validacionInputPrecio, 'Campo precio es obligatorio*.');
-        const stockValido = validarInput(stockInput, validacionInputStock, 'Campo stock es obligatorio*.');
-        const validacionMarcaValida = validarInput(marcaInput, validacionInputMarca, 'Campo marca es obligatorio*.');
+        const nombreValido = validarInput(nombreInput, validacionInputLetras, 'Nombre es obligatorio*.');
+        const precioValido = validarInput(precioInput, validacionInputPrecio, 'Precio es obligatorio*.');
+        const stockValido = validarInput(stockInput, validacionInputStock, 'Stock es obligatorio*.');
+        const validacionMarcaValida = validarInput(marcaInput, validacionInputMarca, 'Marca es obligatorio*.');
         
         // Validar categoria
         const categoriaValida = categoriaSelect.value !== "" ? true : (mostrarMensajeError(categoriaSelect, 'Debe seleccionar una categoría*'), false);
 
-        const descCortaValida = validarInput(descCortaInput, validacionInputDescCorta, 'Campo categoría es obligatorio*.');
-        const edadDesdeValido = validarInput(edadDesdeInput, validacionInputEdad, 'Campo edad es obligatorio*.');
-        const edadHastaValido = validarInput(edadHastaInput, validacionInputEdad, 'Campo edad es obligatorio*.');
+        const descCortaValida = validarInput(descCortaInput, validacionInputDescCorta, 'Categoría es obligatorio*.');
+        const edadDesdeValido = validarInput(edadDesdeInput, validacionInputEdad, 'Edad es obligatorio*.');
+        const edadHastaValido = validarInput(edadHastaInput, validacionInputEdad, 'Edad es obligatorio*.');
         const urlValida = validarInput(fotoInput, validacionInputURL, 'Debe ingresar una URL válida.');
 
         if (nombreValido &&
