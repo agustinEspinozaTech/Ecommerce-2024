@@ -152,4 +152,4 @@ window.addEventListener('click', (event) => {
 });
 
 //puedo eliminar los productos creados
-  /*  localStorage.removeItem('productos');   */
+/*     localStorage.removeItem('productos');   */ 
