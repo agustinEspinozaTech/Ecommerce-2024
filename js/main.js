@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     modal.style.display = "block";
                 } else {
-                    console.error(`Producto inicial no encontrado para el índice ${index + 1}`);
+                    console.error(`Producto inicial no encontrado ${index + 1}`);
                 }
             } else {
                 // Producto agregado desde localStorage
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     modal.style.display = "block";
                 } else {
-                    console.error(`Producto guardado no encontrado para el índice ${productoIndex}`);
+                    console.error(`Producto guardado no encontrado ${productoIndex}`);
                 }
             }
         }
