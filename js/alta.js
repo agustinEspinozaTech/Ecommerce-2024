@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
             localStorage.setItem('productos', JSON.stringify(productos));
 
             // Redirigir a la home al realizar click 
-            window.location.href = '/html/index.html';
+            window.location.href = '../html/index.html';
         }
     });
 });
