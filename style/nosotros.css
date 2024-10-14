@@ -250,7 +250,7 @@ footer {
     }
 
     p {
-        font-size: 0.9em; /* Puede usar una variable si se prefiere */
+        font-size: 0.9em; 
     }
 }
 
@@ -259,7 +259,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Asegúrate de que el modal ocupe toda la pantalla */
     position: fixed;
     top: 0;
     left: 0;
