@@ -41,7 +41,7 @@ textElement.textContent = anuncios[indiceActual].texto;
 
 const imageElement = document.createElement("img");
 imageElement.id = "hero-imagen";
-imageElement.src = anuncios[indiceActual].imagen;  // Ruta de la primera imagen
+imageElement.src = anuncios[indiceActual].imagen; 
 imageElement.alt = "Anuncio";
 
 // Inserta el elemento 
@@ -55,7 +55,7 @@ heroSection.insertBefore(imageElement, buttonElement);
 const cambiarAnuncio = () => {
     indiceActual = (indiceActual + 1) % anuncios.length;
     textElement.textContent = anuncios[indiceActual].texto;
-    imageElement.src = anuncios[indiceActual].imagen;  // Actualiza la imagen
+    imageElement.src = anuncios[indiceActual].imagen;  
 };
 
 

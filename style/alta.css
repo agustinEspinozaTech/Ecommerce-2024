@@ -1,19 +1,10 @@
 :root {
-    --main-bg-color: #f4f4f4;
-    --main-content-bg-color: #f3f0f0;
     --main-text-color: #333;
     --white: #fff;
     --light-gray: #ccc;
     --primary-color: #0069B9;
-    --primary-hover-color: #045b9e;
-    --header-bg-color: #F4F4F4;
     --nav-bg-color: #4a4747;
-    --top-bar-bg-color: #F4F4F4;
-    --footer-bg-color: #333;
-    --box-shadow-color: rgba(0, 0, 0, 0.1);
 }
-
-
 
 header>div:nth-child(2)>div:first-child h1 {
     display: flex;
@@ -73,3 +64,7 @@ main section > div:first-child {
     width: auto;
 }
 
+button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+}

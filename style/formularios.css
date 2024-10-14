@@ -136,7 +136,6 @@ footer {
     padding: 1rem;
     background-color: var(--footer-bg-color);
     color: var(--white);
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
@@ -161,6 +160,7 @@ footer {
 
     nav ul li a {
         padding: 0.75rem 1rem;
+        border-bottom: 1px solid var(--white);
     }
 
     section {
