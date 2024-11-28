@@ -12,10 +12,11 @@
     --top-bar-bg-color: #F4F4F4;
     --footer-bg-color: #333;
     --box-shadow-color: rgba(0, 0, 0, 0.1);
-    --fuente-principal:'DM Sans';
+    --fuente-principal: 'DM Sans';
     --font-size-p: 1.2em;
 
 }
+
 
 * {
     margin: 0;
@@ -29,7 +30,7 @@ body {
     color: var(--main-text-color);
 }
 
-p{
+p {
     font-size: var(--font-size-p);
 }
 
@@ -47,16 +48,18 @@ header>div:nth-child(2)>div:first-child h1 img {
     height: 10vh;
 }
 
+
+
 #top-bar {
     background-color: var(--top-bar-bg-color);
-    color: var( --main-text-color);
+    color: var(--main-text-color);
     text-align: center;
     padding: 0.625rem;
     font-size: 0.875rem;
 }
 
 #header-container {
-   
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,6 +101,10 @@ main {
     background-color: var(--main-content-bg-color);
 }
 
+main section>div:first-child {
+    text-align: center;
+}
+
 section {
     max-width: 50rem;
     margin: 2rem auto;
@@ -105,6 +112,47 @@ section {
     background-color: var(--white);
     border-radius: 0.5rem;
     box-shadow: 0 0 0.625rem var(--box-shadow-color);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 0.25rem;
+    margin-bottom: 0.3125rem;
+    font-size: 1rem;
+    color: var(--main-text-color);
+}
+
+.form-group select {
+    background-color: var(--white);
+    appearance: none;
+    background-image: url('../assets/down.png');
+    background-repeat: no-repeat;
+    background-position: right 0.625rem center;
+    background-size: 1rem;
+}
+
+.form-group select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0.3125rem rgba(0, 121, 107, 0.5);
+}
+
+.form-group input[type="checkbox"] {
+    width: auto;
 }
 textarea {
     resize: none;
@@ -122,9 +170,12 @@ button[type="submit"] {
     color: var(--white);
     border: none;
     border-radius: 0.25rem;
+    display: block;
+    margin: 0 auto;
     cursor: pointer;
-    
+
 }
+
 
 button[type="submit"]:hover {
     background-color: var(--primary-hover-color);
@@ -167,5 +218,3 @@ footer {
         padding: 1rem;
     }
 }
-
-

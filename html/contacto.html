@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZonaShop-Contacto</title>
     <link rel="stylesheet" href="../style/formularios.css">
-    <link rel="stylesheet" href="../style/contacto.css">
+   
 </head>
 
 <body>
@@ -20,19 +20,8 @@
                     <img src="../assets/logo.jpg" alt="Logo">
                 </h1>
             </div>
-            <div>
-                <h1>Todo lo que amas en un solo lugar</h1>
-
-            </div>
-            <div id="user-icons">
-                <a href="#"><img src="../assets/iniciarsesion.png" alt="Carrito de compra"
-                        style="width: 30px; height: 30px; vertical-align: middle; margin-right: 8px;"></a>
-                <a href="#">
-                    <img src="../assets/carrito.png" alt="Carrito de compra"
-                        style="width: 30px; height: 30px; vertical-align: middle; margin-right: 8px;">
-                </a>
-            </div>
         </div>
+
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -44,23 +33,26 @@
     </header>
 
     <main>
-        <section>
+        <section class="form-section">
             <div>
                 <h2>Formulario de Contacto</h2>
             </div>
             <form>
-                <div>
+                <div class="form-group">
                     <label for="nombre">Nombre:</label>
                     <input autocomplete="off" type="text" id="nombre" name="nombre">
                 </div>
-                <div>
+                
+                <div class="form-group">
                     <label for="email">E-mail:</label>
                     <input placeholder="Correo@gmail.com" autocomplete="off" type="email" id="email" name="email">
                 </div>
-                <div>
+
+                <div class="form-group">
                     <label for="comentarios">Comentarios:</label>
                     <textarea id="comentarios" name="comentarios"></textarea>
                 </div>
+
                 <button type="submit">Enviar</button>
             </form>
         </section>
@@ -70,7 +62,6 @@
         <p>&copy; 2024 ZonaShop. Todos los derechos reservados.</p>
     </footer>
     <script src="../js/contacto.js"></script>
-
 </body>
 
 </html>
